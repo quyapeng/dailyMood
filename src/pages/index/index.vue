@@ -1,5 +1,14 @@
 <template>
-  <view class="index"> index </view>
+  <view class="index">
+    <view class="item">
+      <i></i>
+      <h3>早起</h3>
+      <view>
+        <h4>10</h4>
+        <p>坚持天数</p>
+      </view>
+    </view>
+  </view>
 </template>
 
 <script setup lang="ts">
