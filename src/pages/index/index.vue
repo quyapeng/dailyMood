@@ -1,11 +1,15 @@
 <template>
   <view class="index">
     <view class="item">
-      <i></i>
-      <h3>早起</h3>
-      <view>
-        <h4>10</h4>
-        <p>坚持天数</p>
+      <image
+        style="width: 60px; height: 60px; background-color: #eeeeee"
+        mode="aspectFit"
+        src="https://web-assets.dcloud.net.cn/unidoc/zh/cat-2.png"
+      ></image>
+      <view class="textcenter">早起</view>
+      <view class="sub">
+        <text>10</text>
+        <p class="subtext">坚持天数</p>
       </view>
     </view>
   </view>
@@ -17,10 +21,24 @@ const title = ref("index");
 </script>
 
 <style>
-.index {
+.item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.item .textcenter {
+  flex: 1;
+}
+.item .sub text {
+  display: block;
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+}
+.item .sub .subtext {
+  font-size: 12px;
 }
 </style>
