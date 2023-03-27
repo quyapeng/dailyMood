@@ -2,7 +2,7 @@
   <view class="index">
     <view class="item">
       <image
-        style="width: 60px; height: 60px; background-color: #eeeeee"
+        class="img"
         mode="aspectFit"
         src="https://web-assets.dcloud.net.cn/unidoc/zh/cat-2.png"
       ></image>
@@ -27,10 +27,20 @@ const title = ref("index");
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
+  background-color: #2accd4;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #12898f;
 }
 
 .item .textcenter {
   flex: 1;
+}
+.item .img {
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  margin-right: 10px;
 }
 .item .sub text {
   display: block;
